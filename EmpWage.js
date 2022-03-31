@@ -1,17 +1,19 @@
-// //UC1 IF ELSE CONDITION
+//EMPLOYEE WAGE COMPUTATION USING JS
+
+// //UC1 Employee Attendance
+
 // {
-//     const IS_ABSENT = 0;
-//     let empCheck = Math.floor(Math.random() * 10) % 2;
+     const IS_ABSENT = 0;
+  let empCheck = Math.floor(Math.random() * 10) % 2;
 
-//     if (empCheck == IS_ABSENT) {
-//         console.log("uc1 - Employee is ABSENT");
-//         // return;
-//     } else {
-//         console.log("uc1 - Employee is PRESENT")
-//     }
-// }
+   if (empCheck == IS_ABSENT) {
+         console.log("uc1 - Employee is ABSENT");
+        // return;
+    } else {
+        console.log("uc1 - Employee is PRESENT")
+     }
 
-//UC2 switch case 
+//UC2 Part time Full Time Using Switch
 const IS_PART_TIME = 1
 const IS_FULL_TIME = 2
 const PART_TIME_HOURS = 4;
@@ -36,11 +38,11 @@ function getWorkingHours(empCheck) {
 let totalEmpHrs = 0;
 let totalDays = 0;
 
-//UC4
-// for (let day = 1; day <= NUM_OF_WORKING_DAYS; day++) {
-//     let empCheck = Math.floor(Math.random() * 10) % 3;
-//     totalEmpHrs+= getWorkingHours(empCheck);
-// }
+//UC4 Working Hours
+ for (let day = 1; day <= NUM_OF_WORKING_DAYS; day++) {
+ empCheck = Math.floor(Math.random() * 10) % 3;
+     totalEmpHrs+= getWorkingHours(empCheck);
+     }
 
 while(totalEmpHrs<=MAX_WORKING_HOURS && totalDays<NUM_OF_WORKING_DAYS){
     totalDays++;
